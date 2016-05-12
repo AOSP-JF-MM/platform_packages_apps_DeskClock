@@ -144,6 +144,7 @@ public class TimerSetupView extends LinearLayout implements Button.OnClickListen
     private void initializeStartButtonVisibility() {
         if (mStart != null) {
             mStart.setVisibility(isInputHasValue() ? View.VISIBLE : View.INVISIBLE);
+            mStartVisibility = mStart.getVisibility();
         }
     }
 
